@@ -19,26 +19,27 @@ class Logicheck extends BaseController
         return view('v_register');
     }
 
+    // Fungsi untuk simulasi login
     public function auth()
     {
-        return redirect()->to(base_url('/'));
+        // Untuk sementara, kita langsung arahkan ke dashboard marketing
+        // Nantinya di sini kamu bisa menambahkan pengecekan username & password
+        return redirect()->to(base_url('logicheck/dashboard'));
     }
 
     public function save()
     {
+        // Setelah registrasi, arahkan ke login
         return redirect()->to(base_url('login'));
     }
 
-    // --- PERBAIKAN DI SINI ---
     public function ongkir()
     {
-        // Pindahkan return ke dalam kurung kurawal fungsi
         return view('v_cek_ongkir');
     }
 
     public function dashboard()
     {
-        // Pastikan nama file view sesuai
         return view('v_marketing_insights');
     }
 }
