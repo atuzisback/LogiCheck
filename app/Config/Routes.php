@@ -16,3 +16,7 @@ $routes->get('cek-ongkir', 'Logicheck::ongkir');
 
 // Route untuk Proses Form (Jika nanti pakai fungsi cekOngkir)
 $routes->post('layanan/cek-ongkir', 'Logicheck::cekOngkir');
+// Tambahkan ini di bagian bawah Routes.php
+$routes->get('logicheck/ongkir', 'Logicheck::ongkir');
+$routes->post('logicheck/ongkir', 'Logicheck::ongkir');
+$routes->get('logicheck/dashboard', 'Logicheck::dashboard');
