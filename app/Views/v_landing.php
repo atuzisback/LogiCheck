@@ -1161,8 +1161,6 @@ function switchTab(type) {
     toggleBtn.addEventListener('click', toggleChat);
     closeBtn.addEventListener('click', toggleChat);
 </script>
-
-
-
+<link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
 </body>
 </html>
